@@ -1,0 +1,18 @@
+{
+  "name": "accessible-web-components",
+  "version": "0.0.1",
+  "description": "A set of common components, claases and utils built with accessibilty and customisation in mind",
+  "main": "index.js",
+  "dependencies": {
+    "google-closure-compiler": "^20180805.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "google-closure-compiler --js=index.js --js=utils/*.js --js_output_file=dist/all.js --debug=TRUE --warning_level=VERBOSE --jscomp_warning=*",
+    "dist": "google-closure-compiler --js=index.js --js=utils/*.js --js_output_file=dist/all.js --debug=TRUE --warning_level=VERBOSE --jscomp_warning=* --compilation_level=ADVANCED",
+    "examples": "simple-http-server ./examples/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Strutt (mstrutt)",
+  "license": "MIT"
+}
