@@ -1,0 +1,22 @@
+<style>
+  [aria-hidden="true"] {
+    display: none;
+  }
+
+  .modal {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .is-visible {
+    opacity: 1;
+  }
+</style>
+
+<div class="modal">
+    <p>Some modal content</p>
+</div>
+
+<button class="modal-trigger">Modal</button>
+
+<script src="./modal.example.js" type="module"></script>

@@ -16,8 +16,8 @@
     "sinon": "^6.1.5"
   },
   "scripts": {
-    "build": "google-closure-compiler --js=index.js --js=utils/*.js --js_output_file=dist/all.js --debug=TRUE --warning_level=VERBOSE --jscomp_warning=*",
-    "dist": "google-closure-compiler --js=index.js --js=utils/*.js --js_output_file=dist/all.js --debug=TRUE --warning_level=VERBOSE --jscomp_warning=* --compilation_level=ADVANCED",
+    "build": "google-closure-compiler --js=index.js --js=utils/*.js --js=!utils/*.spec.js --js_output_file=dist/all.js --debug=TRUE --warning_level=VERBOSE --jscomp_warning=*",
+    "dist": "google-closure-compiler --js=index.js --js=utils/*.js --js=!utils/*.spec.js --js_output_file=dist/all.js --debug=TRUE --warning_level=VERBOSE --jscomp_warning=* --compilation_level=ADVANCED",
     "examples": "simple-http-server ./examples/",
     "test": "mocha \"{utils,components}/*.spec.js\" --require babel-register --require ./test-setup.js",
     "test-watch": "npm run test -- -w"
