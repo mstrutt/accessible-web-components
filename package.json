@@ -28,5 +28,6 @@
     "presets": [
       "env"
     ]
-  }
+  },
+  "source": true
 }
